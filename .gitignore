@@ -1,0 +1,26 @@
+
+# STM32 build outputs
+/build/
+/Debug/
+/Release/
+
+# Compiled files
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.d
+*.su
+*.cyclo
+
+# CMake temporary files
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+
+# Temporary files
+*.log
+*.tmp
+/AGENTS.md

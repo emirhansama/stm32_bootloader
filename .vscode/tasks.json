@@ -1,0 +1,31 @@
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "STM32: BUILD",
+            "type": "shell",
+            "command": "cube-cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/Debug"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "STM32: FLASH",
+            "type": "shell",
+            "command": "cube",
+            "args": [
+                "programmer",
+                "-c",
+                "port=SWD",
+                "-d",
+                "${workspaceFolder}/build/Debug/bl.elf",
+                "-v",
+                "-rst"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+
+#ifndef BL_PLATFORM_H
+#define BL_PLATFORM_H
+
+#define BL_FLASH_CLEAR_FLAGS (FLASH_FLAG_EOP | FLASH_FLAG_ALL_ERRORS)
+
+// Application flash sectors.
+#define BL_FLASH_APP_FIRST_SECTOR FLASH_SECTOR_4
+#define BL_FLASH_APP_SECTOR_COUNT 4
+#define BL_FLASH_APP_FIRST_SECTOR_SIZE (128 * 1024)
+#define BL_FLASH_APP_NEXT_SECTOR_SIZE (256 * 1024)
+
+// Application stack pointer range.
+#define BL_APP_SRAM_START 0x20000000
+#define BL_APP_SRAM_END 0x20050000
+
+#endif /* BL_PLATFORM_H */
